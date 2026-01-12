@@ -36,7 +36,7 @@ class ResponseModel(BaseModel):
 model = OpenRouterModel(
     settings.openrouter_model,
     provider=OpenRouterProvider(api_key=settings.openrouter_apikey),
-    settings=ModelSettings(temperature=0.1, max_tokens=350)
+    settings=ModelSettings(temperature=0.1)
 )
 
 sales_agent = Agent(
